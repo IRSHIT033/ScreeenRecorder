@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       @import 'https://fonts.googleapis.com/css?family=Rubik+One';
+      html{
+          min-height: 600px;
+          min-width:600px;
+      }
+       body{
+           overflow-x: hidden;
+           width: 100%;
+           height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center; 
+          flex-direction: column;
+          background-color: #676767;
+       }
+    button{
+  outline:0; 
+  font-size:2em;
+  font-weight:600;
+  background:#ffa500;
+  color: #fff;
+  border:none;
+  padding:1rem 2rem;
+  text-transform: uppercase;
+  transition:all .3s ease-out; 
+  box-shadow:inset 0 -8px 0 0 rgba(0,0,0,0),
+    1px 1px 0 0 #d98e20,
+    2px 2px 0 0 #d98e20,
+    3px 3px 0 0 #d98e20,
+    4px 4px 0 0 #d98e20,
+    5px 5px 0 0 #d98e20,
+    6px 6px 0 0 #d98e20,
+    7px 7px 0 0 #d98e20,
+    8px 8px 0 0 #d98e20,
+    9px 9px 0 0 #d98e20,
+    10px 10px 0 0 #d98e20,
+    10px 10px 0 0 #d98e20,
+    10px 10px 0 0 #d98e20;
+    }
+
+button:active{
+ 
+  box-shadow:inset 0 -4px 0 0 rgba(0,0,0,0),
+    1px 1px 0 0 #d98e20,
+    2px 2px 0 0 #d98e20,
+    3px 3px 0 0 #d98e20,
+    4px 4px 0 0 #d98e20,
+    5px 5px 0 0 #d98e20;
+}
+    .btn{
+    padding: 1rem;
+   
+    }
+    #start{
+        margin: 1rem;
+    }
+    #stop{
+        margin: 1rem;  
+    }
+ @media only screen and  (max-width:499px) {
+    video{
+    width: 300px;
+    height: 300px;
+}  
+ }
+   
+   </style>
+
+</head>
+<body>
+    <video width="700" height="400" controls></video>
+    <br>
+   <div class='btn'><button id ="start">Start</button>
+    <button id ="stop">Stop</button></div> 
+    <script src="./app.js"></script>
+</body>
+</html>
